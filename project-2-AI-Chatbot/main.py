@@ -1,31 +1,16 @@
-from src.services.gemini_service import GeminiService
-
+from  src.chatbot.chatbot import Chatbot
 
 def main():
 
-    service = GeminiService()
+    chatbot = Chatbot()
 
+    print(f"\nChatbot: {chatbot}")
 
-    
-    answer = service.ask(
-        [
-            {
-                "role": "system",
-                "content": "You are a helpful assistant"
-            },
-            {
-                "role": "user",
-                "content": "Introduce yourself in 5 line"
-            }
-        ]
-    )
-   
-    # answer = service.ask("Introduce yourself in 5 line")
-
-    print(answer)
+    chatbot.run()
 
 
 if __name__ == "__main__":
+
     main()    
 
 
