@@ -7,6 +7,16 @@ class Chatbot:
         
         self.gemini_service = GeminiService()
 
+        self.conversation_history = [
+            {
+                "role": "system",
+                "content": (
+                      "You are a helpful AI assistant. "
+                      "Answer clearly and politely."
+                )
+            }
+        ]
+
 
     def display_welcome_message(self):
 
@@ -54,18 +64,23 @@ class Chatbot:
 
 
             try: 
+                
+                self.conversation_history.append(
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                )
 
                 response = self.gemini_service.ask(
-                    [
-                        {
-                            "role": "system",
-                            "content": "You are a helpful assistant"
-                        },
-                        {
-                            "role": "user",
-                            "content": prompt
-                        }
-                    ]
+                  self.conversation_history
+                )
+                
+                self.conversation_history.append(
+                    {
+                        "role": "assistant",
+                        "content": response
+                    }
                 )
 
                 self.display_response(response)
