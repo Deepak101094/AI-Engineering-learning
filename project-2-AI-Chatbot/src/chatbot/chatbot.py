@@ -1,10 +1,11 @@
 from src.services.gemini_service import GeminiService
 from src.utils.logger import logger
+from src.interfaces.llm_service import LLMService
 
 
 class Chatbot:
 
-    def __init__(self, ai_service):
+    def __init__(self, ai_service: LLMService):
         
         self.ai_service = ai_service
 
@@ -61,7 +62,7 @@ class Chatbot:
                  print(content, end="", flush=True)
                  full_response += content
 
-             print("\n")
+             print()
 
 
              self.conversation_history.append(

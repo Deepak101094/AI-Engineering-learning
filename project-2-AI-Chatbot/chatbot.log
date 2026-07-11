@@ -15,3 +15,7 @@
 2026-07-11 12:01:23,156 | INFO | User Prompt: what am i learning ?
 2026-07-11 12:01:27,091 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
 2026-07-11 12:01:27,260 | INFO | Response generated successfully.
+2026-07-11 15:25:06,124 | INFO | Chatbot started.
+2026-07-11 15:25:46,358 | INFO | User Prompt: explain me about AI in 10 lines.
+2026-07-11 15:25:54,355 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 15:25:55,050 | INFO | Response generated successfully.
