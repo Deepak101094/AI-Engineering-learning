@@ -4,9 +4,9 @@ from src.utils.logger import logger
 
 class Chatbot:
 
-    def __init__(self):
+    def __init__(self, ai_service):
         
-        self.gemini_service = GeminiService()
+        self.ai_service = ai_service
 
         self.conversation_history = [
             {
@@ -48,7 +48,7 @@ class Chatbot:
          Stream the assistant response and save it to conversation history.
          """    
          
-         stream =  self.gemini_service.stream(self.conversation_history)
+         stream =  self.ai_service.stream(self.conversation_history)
 
          full_response = ""
 
