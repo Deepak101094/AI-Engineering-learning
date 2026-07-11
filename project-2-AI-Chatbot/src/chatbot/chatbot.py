@@ -42,6 +42,35 @@ class Chatbot:
         print(response)
 
 
+    def stream_response(self):
+         """
+         Stream the assistant response and save it to conversation history.
+         """    
+         
+         stream =  self.gemini_service.stream(self.conversation_history)
+
+         full_response = ""
+
+         print("\n🤖 Gemini:\n")
+
+         for chunk in stream:
+             content = chunk.choices[0].delta.content
+
+             if content:
+                 print(content, end="", flush=True)
+                 full_response += content
+
+             print("\n")
+
+
+             self.conversation_history.append(
+                 {
+                     "role": "assistant",
+                     "content": full_response
+                 }
+             )   
+
+
     def run(self):
 
         self.display_welcome_message()
@@ -72,20 +101,10 @@ class Chatbot:
                     }
                 )
 
-                response = self.gemini_service.ask(
-                  self.conversation_history
-                )
-                
-                self.conversation_history.append(
-                    {
-                        "role": "assistant",
-                        "content": response
-                    }
-                )
+                self.stream_response()
 
-                self.display_response(response)
 
             except Exception as e:
 
-                print(f"\nError: {e}")    
+                print(f"\n❌ Error: {e}")    
 

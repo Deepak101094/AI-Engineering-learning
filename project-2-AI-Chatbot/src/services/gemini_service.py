@@ -20,17 +20,18 @@ class GeminiService:
         self.model = Settings.GEMINI_MODEL
 
 
-    def ask(self, messages):
+    def stream(self, messages):
 
          """
          Send a prompt to Gemini and return the response.
          """
 
-         response = self.client.chat.completions.create(
+         return self.client.chat.completions.create(
              model= self.model,
-             messages = messages
+             messages = messages,
+             stream= True
          )
 
-         return response.choices[0].message.content
+         
 
 
