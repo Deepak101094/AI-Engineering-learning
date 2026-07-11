@@ -1,0 +1,4 @@
+2026-07-11 10:33:29,658 | INFO | Chatbot started.
+2026-07-11 10:33:43,150 | INFO | User Prompt: Hi
+2026-07-11 10:33:45,163 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 10:33:45,176 | INFO | Response generated successfully.

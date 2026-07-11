@@ -1,4 +1,5 @@
 from src.services.gemini_service import GeminiService
+from src.utils.logger import logger
 
 
 class Chatbot:
@@ -72,7 +73,8 @@ class Chatbot:
 
 
     def run(self):
-
+        
+        logger.info("Chatbot started.")
         self.display_welcome_message()
 
         while True:
@@ -94,6 +96,8 @@ class Chatbot:
 
             try: 
                 
+                logger.info(f"User Prompt: {prompt}")
+
                 self.conversation_history.append(
                     {
                         "role": "user",
@@ -103,8 +107,12 @@ class Chatbot:
 
                 self.stream_response()
 
+                logger.info("Response generated successfully.")
+
 
             except Exception as e:
 
-                print(f"\n❌ Error: {e}")    
+                print(f"\n❌ Error: {e}")
+
+                logger.error(str(e))    
 
