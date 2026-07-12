@@ -19,3 +19,13 @@
 2026-07-11 15:25:46,358 | INFO | User Prompt: explain me about AI in 10 lines.
 2026-07-11 15:25:54,355 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
 2026-07-11 15:25:55,050 | INFO | Response generated successfully.
+2026-07-11 17:01:04,972 | INFO | Chatbot started.
+2026-07-11 17:01:36,431 | INFO | User Prompt: Hi there.
+2026-07-11 17:01:38,705 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 17:01:38,722 | INFO | Response generated successfully.
+2026-07-11 17:02:00,801 | INFO | User Prompt: My Name is Deepak and I'm learning AI.
+2026-07-11 17:02:03,994 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 17:02:04,110 | INFO | Response generated successfully.
+2026-07-11 17:03:30,330 | INFO | User Prompt: is there job in india for fullstack ai developer or fullstack ai engineer right now ?
+2026-07-11 17:03:37,691 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 17:03:41,812 | INFO | Response generated successfully.

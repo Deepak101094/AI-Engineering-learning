@@ -1,12 +1,12 @@
 from  src.chatbot.chatbot import Chatbot
-from src.services.gemini_service import GeminiService
+from src.factories.llm_service_factory import LLMServiceFactory
 
 
 def main():
     
-    service = GeminiService()
+    llm_service = LLMServiceFactory.create()
 
-    chatbot = Chatbot(service)
+    chatbot = Chatbot(llm_service)
 
     chatbot.run()
 
