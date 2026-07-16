@@ -29,3 +29,7 @@
 2026-07-11 17:03:30,330 | INFO | User Prompt: is there job in india for fullstack ai developer or fullstack ai engineer right now ?
 2026-07-11 17:03:37,691 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
 2026-07-11 17:03:41,812 | INFO | Response generated successfully.
+2026-07-14 14:22:40,587 | INFO | Chatbot started.
+2026-07-14 14:23:03,577 | INFO | User Prompt: Hi there.
+2026-07-14 14:23:05,139 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 14:23:05,157 | INFO | Response generated successfully.
