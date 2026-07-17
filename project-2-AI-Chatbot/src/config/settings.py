@@ -15,6 +15,11 @@ class Settings:
         "gemini"
     )
 
+    SYSTEM_PROMPT = os.getenv(
+        "SYSTEM_PROMPT",
+        "You are a helpful AI assistant."
+    )
+
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
     if not GEMINI_API_KEY:

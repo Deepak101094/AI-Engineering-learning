@@ -33,3 +33,16 @@
 2026-07-14 14:23:03,577 | INFO | User Prompt: Hi there.
 2026-07-14 14:23:05,139 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
 2026-07-14 14:23:05,157 | INFO | Response generated successfully.
+2026-07-16 17:01:22,176 | INFO | Chatbot started.
+2026-07-16 17:01:27,809 | INFO | User Prompt: Hi there.
+2026-07-16 17:01:29,836 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-16 17:01:29,846 | INFO | Response generated successfully.
+2026-07-16 17:01:42,568 | INFO | User Prompt: my name is deepak
+2026-07-16 17:01:44,452 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-16 17:01:44,457 | INFO | Response generated successfully.
+2026-07-16 17:01:53,315 | INFO | User Prompt: what is my name
+2026-07-16 17:01:54,895 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-16 17:01:54,899 | INFO | Response generated successfully.
+2026-07-16 17:02:19,095 | INFO | User Prompt: expalin AI as a AI teacher
+2026-07-16 17:02:27,563 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-16 17:02:33,519 | INFO | Response generated successfully.

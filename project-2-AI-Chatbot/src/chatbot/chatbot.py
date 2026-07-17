@@ -1,6 +1,7 @@
 from src.services.gemini_service import GeminiService
 from src.utils.logger import logger
 from src.interfaces.llm_service import LLMService
+from src.config.settings import Settings
 
 
 class Chatbot:
@@ -12,10 +13,7 @@ class Chatbot:
         self.conversation_history = [
             {
                 "role": "system",
-                "content": (
-                      "You are a helpful AI assistant. "
-                      "Answer clearly and politely."
-                )
+                "content": Settings.SYSTEM_PROMPT
             }
         ]
 
